@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/additional.css">
+
+</head>
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="40px" class="invert" src="images/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img width="110px" class="invert" src="images/logo.svg" alt="">
+                </div>
+                <!-- <ul>
+                    <li><img class="invert" src="images/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="images/search.svg" alt="search">Search</li>
+                </ul> -->
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="images/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href=""><span>Legal</span></a></div>
+                    <div><a href=""><span>Safety & Privacy Center</span></a></div>
+                    <div><a href=""><span>Privacy Policy</span></a></div>
+                    <div><a href=""><span>Cookies</span></a></div>
+                    <div><a href=""><span>About Ads</span></a></div>
+                    <div><a href=""><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img class="invert hamburger" src="images/hamburger.svg" alt="">
+                        <svg id="header_previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <svg id="header_next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            color="#ffffff" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="showAlertButton" class="signupbtn">Sign up</button>
+                    <button id="showAlertButton1" class="loginbtn">Log in</button>
+                </div>
+            </div>
+<!-- ankush -->
+<div id="alertBox" class="alert">
+    <span class="closebtn" onclick="closeAlert()"></span>
+    <strong>Coming soon!</strong>😊
+  </div>
+
+
+
+
+            <div class="spotifyPlaylists">
+                <h2>playlist</h2>
+                <div class="cardContainer">
+                    
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+
+                    <div class="abovebar">
+
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img id="previous" src="images/prevsong.svg" alt="">
+                            <img id="play" src="images/play.svg" alt="">
+                            <img id="next" src="images/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img width="25" src="images/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
